@@ -1,6 +1,7 @@
-#include "iostream"
-#include "string"
-#include "fstream"
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <boost/filesystem.hpp>
 
 using namespace std;
 
@@ -28,7 +29,7 @@ int main()
     string InputWord, EncodedWord;
     int RotNumber;
     cout << "Insert word to crypt in ROT.\n";
-    cin >> InputWord;
+    getline(cin, InputWord);
     while (true)
     {
         cout << "Insert ROT Num.\n";
@@ -38,10 +39,12 @@ int main()
         else
             cout << "Number can't be larger than 13 and smaller than 1.\n";
     }
-    ofstream OutPutLog("EncodingResult"+InputWord+ to_string(RotNumber)+".txt");
+    ofstream OutPutLog("EncodingResult"+InputWord+ to_string(RotNumber)+".txt", ios::in);
     EncodedWord = EncodeRot(InputWord, RotNumber);
     cout << "Input and Num: "+InputWord+" "+to_string(RotNumber)+"; "+EncodedWord+"\n";
     OutPutLog << "Inserted Word: "+InputWord+".\n Encoded Word: "+EncodedWord+".\n ROT Level: "+to_string(RotNumber)+"\n";
     OutPutLog.close();
+    // string FPath = "EncodingResult"+InputWord+ to_string(RotNumber)+".txt";
+    // cout << "Created Log File in "+boost::filesystem::path(FPath).string()+"\n";
     return 0;
 }
