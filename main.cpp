@@ -29,7 +29,6 @@ int main()
     int RotNumber;
     cout << "Insert word to crypt in ROT.\n";
     cin >> InputWord;
-    ofstream OutPutLog("EncodingResult+"+InputWord+ to_string(RotNumber)+".txt");
     while (true)
     {
         cout << "Insert ROT Num.\n";
@@ -39,6 +38,7 @@ int main()
         else
             cout << "Number can't be larger than 13 and smaller than 1.\n";
     }
+    ofstream OutPutLog("EncodingResult"+InputWord+ to_string(RotNumber)+".txt");
     EncodedWord = EncodeRot(InputWord, RotNumber);
     cout << "Input and Num: "+InputWord+" "+to_string(RotNumber)+"; "+EncodedWord+"\n";
     OutPutLog << "Inserted Word: "+InputWord+".\n Encoded Word: "+EncodedWord+".\n ROT Level: "+to_string(RotNumber)+"\n";
