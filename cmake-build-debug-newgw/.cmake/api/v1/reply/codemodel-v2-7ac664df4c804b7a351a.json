@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ROTEncrypt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ROTEncrypt-Debug-3945272dd31af0e9bdc5.json",
+					"jsonFile" : "target-ROTEncrypt-Debug-3d076ed2c431209d612a.json",
 					"name" : "ROTEncrypt",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/simon/CLionProjects/ROTEncrypt/cmake-build-debug",
+		"build" : "C:/Users/simon/CLionProjects/ROTEncrypt/cmake-build-debug-newgw",
 		"source" : "C:/Users/simon/CLionProjects/ROTEncrypt"
 	},
 	"version" : 

@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_ROTEncrypt: phony || CMakeFiles/ROTEncry
 
 build CMakeFiles/ROTEncrypt.dir/main.cpp.obj: CXX_COMPILER__ROTEncrypt_Debug C$:/Users/simon/CLionProjects/ROTEncrypt/main.cpp || cmake_object_order_depends_target_ROTEncrypt
   DEP_FILE = CMakeFiles\ROTEncrypt.dir\main.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -static-libstdc++ -static-libgcc -g -fdiagnostics-color=always
   INCLUDES = -IC:/boost_1_81_0/boost_1_81_0
   OBJECT_DIR = CMakeFiles\ROTEncrypt.dir
   OBJECT_FILE_DIR = CMakeFiles\ROTEncrypt.dir
@@ -65,7 +65,8 @@ build CMakeFiles/ROTEncrypt.dir/main.cpp.obj: CXX_COMPILER__ROTEncrypt_Debug C$:
 # Link the executable ROTEncrypt.exe
 
 build ROTEncrypt.exe: CXX_EXECUTABLE_LINKER__ROTEncrypt_Debug CMakeFiles/ROTEncrypt.dir/main.cpp.obj
-  FLAGS = -g
+  FLAGS = -static-libstdc++ -static-libgcc -g
+  LINK_FLAGS = -static
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/boost_1_81_0/boost_1_81_0/libs
   OBJECT_DIR = CMakeFiles\ROTEncrypt.dir

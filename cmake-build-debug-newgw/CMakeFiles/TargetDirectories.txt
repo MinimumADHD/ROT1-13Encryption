@@ -1,0 +1,3 @@
+C:/Users/simon/CLionProjects/ROTEncrypt/cmake-build-debug-newgw/CMakeFiles/ROTEncrypt.dir
+C:/Users/simon/CLionProjects/ROTEncrypt/cmake-build-debug-newgw/CMakeFiles/edit_cache.dir
+C:/Users/simon/CLionProjects/ROTEncrypt/cmake-build-debug-newgw/CMakeFiles/rebuild_cache.dir
