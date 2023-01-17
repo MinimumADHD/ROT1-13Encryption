@@ -1,3 +1,0 @@
-Inserted Word: JFK.
- Encoded Word: OKP.
- ROT Level: 5

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <boost/filesystem.hpp>
+//#include <boost/filesystem.hpp>
 
 using namespace std;
 
@@ -34,7 +34,7 @@ int main()
     {
         cout << "Insert ROT Num.\n";
         cin >> RotNumber;
-        if (RotNumber <= 13 && RotNumber >= 1)
+        if (RotNumber <= 25 && RotNumber >= 1)
             break;
         else
             cout << "Number can't be larger than 13 and smaller than 1.\n";

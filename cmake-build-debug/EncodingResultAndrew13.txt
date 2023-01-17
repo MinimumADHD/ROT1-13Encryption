@@ -1,0 +1,3 @@
+Inserted Word: Andrew.
+ Encoded Word: Naqerj.
+ ROT Level: 13
